@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import ButtonComponent from "../ButtonComponent";
 import styles from './styles';
+import {Actions} from "react-native-router-flux";
 
 const CarItem = (props) => {
 
@@ -28,18 +29,14 @@ const CarItem = (props) => {
             <View style={styles.buttonsContainer}>
                 <ButtonComponent
                     type="primary"
-                    text="Log in"
-                    onPress={() => {
-                        console.warn("Log in");
-                    }}
+                    text="Back to Map"
+                    onPress={() => Actions.map()}
                 />
 
                 <ButtonComponent
                     type="secondary"
-                    text="Sign up"
-                    onPress={() => {
-                        console.warn("Sign up");
-                    }}
+                    text="Home page"
+                    onPress={() => Actions.auth()}
                 />
             </View>
 

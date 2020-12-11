@@ -7,12 +7,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'white',
     },
-        buttonsContainer: {
-            position: 'absolute',
-            bottom: 250,
-            width: '100%',
-            backgroundColor: 'white',
-        },
+    buttonsContainer: {
+        width: '100%',
+        backgroundColor: 'white',
+    },
     logo: {
         resizeMode: 'contain',
         width: 300,
@@ -21,9 +19,7 @@ const styles = StyleSheet.create({
 
     },
     input: {
-        top: 300,
-        marginVertical: 8,
-        width: '90%',
+        marginVertical: 8
     }
 }
 );
