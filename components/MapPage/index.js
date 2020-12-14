@@ -31,7 +31,7 @@ export const MapPage = () => {
         <View style={styles.container}>
             <MapView
                 style={styles.map}
-                initialCamera={{ center: { latitude: 43.25308, longitude: 76.92313 }, zoom: 6 }}
+                initialCamera={{ center: { latitude: 43.253, longitude: 76.923 }, zoom: 10 }}
             >
                 {cars.map((n, i) => (
                     <Marker coordinate={{ latitude: n.coords[0], longitude: n.coords[1] }} key={i}>
